@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nora - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+        cursor: none;
+      }
+      .tooltip {
+        @apply absolute left-1/2 -translate-x-1/2 top-12 bg-white text-sm text-gray-700 px-3 py-1 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition duration-300 z-10 whitespace-nowrap pointer-events-none;
+      }
+      .cursor-custom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        border: 2px solid #d946ef;
+        border-radius: 50%;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: transform 0.15s ease-out, background-color 0.25s ease, border-color 0.25s ease;
+        z-index: 9999;
+        mix-blend-mode: difference;
+        background-color: transparent;
+        will-change: transform, background-color;
+        backface-visibility: hidden;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#F8F4F0] to-[#EFE6F7] text-[#2E2E2E]">
+    <!-- Hero -->
+    <section class="w-full max-w-4xl mx-auto py-16 px-6 text-center">
+      <h1 class="text-6xl font-extrabold mb-6 text-gray-900">Nora</h1>
+      <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+        Turning ideas into clean and intuitive web experiences.<br /><br />
+        I’m a passionate fullstack developer based in Paris, currently working
+        at Datacend and studying at EFREI. I love transforming ideas into
+        interactive and meaningful web applications by combining clean code,
+        design thinking, and modern technologies.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-semibold mb-12 text-center">Skills & Tools</h2>
+  <div class="flex flex-wrap justify-center gap-8">
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg" alt="HTML5" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg" alt="CSS3" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" alt="TailwindCSS" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-line.svg" alt="C# Line" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg" alt="C# Plain" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-plain-wordmark.svg" alt="AngularJS" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="Bootstrap" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="JavaScript" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-plain.svg" alt="PHP" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-plain.svg" alt="Java" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-plain.svg" alt="Python" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain.svg" alt="Node.js" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg" alt="Git" />
+    </div>
+
+    <div class="skill-card">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" />
+    </div>
+
+  </div>
+</section>
+
+<style>
+  .skill-card {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .skill-card:hover {
+    background: rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  .skill-card img {
+    max-width: 90%;
+    max-height: 90%;
+    filter: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(750%) hue-rotate(180deg) brightness(90%) contrast(88%);
+    transition: filter 0.3s ease;
+  }
+  .skill-card:hover img {
+    filter: none;
+  }
+  @media (max-width: 640px) {
+    .skill-card {
+      width: 80px;
+      height: 80px;
+      padding: 0.6rem 1rem;
+    }
+  }
+</style>
+
+
+    <!-- Contact -->
+    <section class="py-20 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Let’s Connect</h2>
+      <p class="mb-6 text-gray-600">boudarbalanora@gmail.com</p>
+      <div class="flex justify-center gap-4">
+        <a href="https://github.com/noraboudarbala" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            class="w-8 h-8"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/noraboudarbala/" target="_blank">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+            class="w-8 h-8"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Curseur personnalisé -->
+    <div class="cursor-custom" id="customCursor"></div>
+
+    <script>
+      const cursor = document.getElementById('customCursor');
+
+      window.addEventListener('mousemove', (e) => {
+        cursor.style.top = e.clientY + 'px';
+        cursor.style.left = e.clientX + 'px';
+      });
+    </script>
+  </body>
+</html>
