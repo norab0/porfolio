@@ -92,37 +92,50 @@
       </div>
     </section>
 
-    <!-- Education -->
-    <section id="education" class="max-w-5xl mx-auto px-6 py-16">
-      <h2 class="text-3xl font-bold mb-10 text-center">Education</h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-lg font-semibold text-purple-600">Master’s in Full-Stack Development Management</h3>
-          <p class="text-sm text-gray-700">Sep 2024 – Jul 2026 · EFREI Paris Panthéon-Assas, Villejuif</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-purple-600">Bachelor in Application Development</h3>
-          <p class="text-sm text-gray-700">Sep 2023 – Jul 2024 · Campus Sup St Charles, Le Mans</p>
-        </div>
-        <div>
-          <h3 class="text-lg font-semibold text-purple-600">BTS SIO – Software & Business Applications</h3>
-          <p class="text-sm text-gray-700">Sep 2021 – Jul 2023 · Campus Sup St Charles, Le Mans</p>
-        </div>
-      </div>
-    </section>
+ <!-- Education Horizontal Section -->
+<section id="education" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-4xl font-bold mb-16 text-center">Education</h2>
+
+  <div class="flex flex-col md:flex-row gap-6 justify-center items-stretch text-center">
+    
+    <!-- Master -->
+    <div class="flex-1 bg-white/60 backdrop-blur-md p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-semibold text-gray-800">Master’s in Full-Stack Development</h3>
+      <p class="text-sm text-gray-600 mt-1">EFREI Paris Panthéon-Assas</p>
+      <p class="text-xs text-gray-500 mt-2">Sep 2024 – Jul 2026</p>
+    </div>
+
+    <!-- Bachelor -->
+    <div class="flex-1 bg-white/60 backdrop-blur-md p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-semibold text-gray-800">Bachelor in App Development</h3>
+      <p class="text-sm text-gray-600 mt-1">Campus Sup St Charles, Le Mans</p>
+      <p class="text-xs text-gray-500 mt-2">Sep 2023 – Jul 2024</p>
+    </div>
+
+    <!-- BTS -->
+    <div class="flex-1 bg-white/60 backdrop-blur-md p-6 rounded-xl shadow-md">
+      <h3 class="text-lg font-semibold text-gray-800">BTS SIO – Software & Business</h3>
+      <p class="text-sm text-gray-600 mt-1">Campus Sup St Charles, Le Mans</p>
+      <p class="text-xs text-gray-500 mt-2">Sep 2021 – Jul 2023</p>
+    </div>
+
+  </div>
+</section>
+
+
 
   <section id="experience" class="max-w-5xl mx-auto px-6 py-16">
   <h2 class="text-3xl font-bold mb-12 text-center">Professional Experience</h2>
   <div class="md:flex gap-6">
     <!-- Tabs -->
     <div class="flex md:flex-col gap-3 md:w-1/3 text-left mb-6 md:mb-0">
-      <button class="tab-button relative text-sm px-4 py-2 rounded-lg transition-all duration-300 hover:bg-purple-100 text-left w-full border border-transparent hover:border-purple-300 focus:outline-none" data-tab="datacend">
+      <button class="tab-button relative text-sm px-4 py-2 rounded-lg transition-all duration-300 hover:bg-purple-100 text-left w-full border border-transparent focus:outline-none" data-tab="datacend">
         <span class="tab-text">Datacend</span>
       </button>
-      <button class="tab-button relative text-sm px-4 py-2 rounded-lg transition-all duration-300 hover:bg-purple-100 text-left w-full border border-transparent hover:border-purple-300 focus:outline-none" data-tab="eligi">
+      <button class="tab-button relative text-sm px-4 py-2 rounded-lg transition-all duration-300 hover:bg-purple-100 text-left w-full border border-transparent focus:outline-none" data-tab="eligi">
         <span class="tab-text">ELIGI</span>
       </button>
-      <button class="tab-button relative text-sm px-4 py-2 rounded-lg transition-all duration-300 hover:bg-purple-100 text-left w-full border border-transparent hover:border-purple-300 focus:outline-none" data-tab="biworks">
+      <button class="tab-button relative text-sm px-4 py-2 rounded-lg transition-all duration-300 hover:bg-purple-100 text-left w-full border border-transparent focus:outline-none" data-tab="biworks">
         <span class="tab-text">BIWORKS</span>
       </button>
     </div>
@@ -176,8 +189,6 @@
     }
 
     .tab-button.active {
-      background-color: #E9D5FF; /* soft purple */
-      border-color: #C084FC;
       font-weight: 600;
     }
 
@@ -217,6 +228,55 @@
     }
   </script>
 </section>
+<!-- Projects Section -->
+    <section
+      id="projects"
+      class="max-w-6xl mx-auto px-6 py-24"
+      aria-label="Projects"
+    >
+      <h2 class="text-4xl font-bold mb-16 text-center text-gray-900">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project Card 1 -->
+        <div
+          class="bg-white/60 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+        >
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">
+            Project Name #1
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Short description of the project, what tech stack was used, and the
+            purpose or goal. Keep it concise and impactful.
+          </p>
+          <a
+            href="https://github.com/username/project1"
+            target="_blank"
+            class="text-sm text-purple-600 hover:underline"
+            >View on GitHub →</a
+          >
+        </div>
+
+        <!-- Project Card 2 -->
+        <div
+          class="bg-white/60 backdrop-blur-md p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300"
+        >
+          <h3 class="text-xl font-semibold text-purple-700 mb-2">
+            Project Name #2
+          </h3>
+          <p class="text-gray-700 mb-4">
+            Another example of a project — include unique features or tech
+            challenges solved.
+          </p>
+          <a
+            href="https://github.com/username/project2"
+            target="_blank"
+            class="text-sm text-purple-600 hover:underline"
+            >View on GitHub →</a
+          >
+        </div>
+
+        <!-- Add more project cards as needed -->
+      </div>
+    </section>
 
 
     <!-- Contact -->
